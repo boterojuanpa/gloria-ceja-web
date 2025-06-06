@@ -17,7 +17,7 @@ const Hero = () => {
   };
 
   return (
-    <section id="hero" className="relative min-h-screen flex flex-col justify-between overflow-hidden">
+    <section id="hero" className="relative min-h-screen flex flex-col justify-center overflow-hidden">
       {/* Background with animated gradient overlay */}
       <div className="absolute inset-0 church-gradient">
         <div className="absolute inset-0 bg-gradient-to-br from-black/30 via-transparent to-black/50"></div>
@@ -50,7 +50,7 @@ const Hero = () => {
               <span className="text-accent font-semibold block mt-2"> fe, esperanza y amor</span>
             </p>
 
-            <div className="space-y-6 sm:space-y-0 sm:space-x-6 sm:flex sm:justify-center animate-fade-in" style={{animationDelay: '0.9s'}}>
+            <div className="space-y-6 sm:space-y-0 sm:space-x-6 sm:flex sm:justify-center animate-fade-in mb-16" style={{animationDelay: '0.9s'}}>
               <Button
                 onClick={() => scrollToSection('#contact')}
                 size="lg"
@@ -68,16 +68,6 @@ const Hero = () => {
                 Conoce más
               </Button>
             </div>
-          </div>
-        </div>
-      </div>
-
-      {/* Enhanced scroll indicator */}
-      <div className="relative z-10 flex justify-center pb-8">
-        <div className="animate-bounce">
-          <div className="w-8 h-12 border-2 border-white/50 rounded-full flex justify-center relative overflow-hidden">
-            <div className="w-1 h-4 bg-white/70 rounded-full mt-2 animate-pulse"></div>
-            <div className="absolute inset-0 bg-gradient-to-b from-transparent via-white/20 to-transparent animate-pulse"></div>
           </div>
         </div>
       </div>
